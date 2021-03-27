@@ -7,12 +7,19 @@
 # sparky = GoodDog.new
 
 class GoodDog
+  # acts similarly to a getter and setter
+  attr_accessor :name
+
+  # def get_name
+  #   @name
+  # end
+
+  # def set_name=(name)
+  #   @name = name
+  # end
+
   def initialize(name)
     @name = name
-  end
-
-  def get_name
-    @name
   end
 
   def speak
@@ -22,7 +29,6 @@ end
 
 sparky = GoodDog.new("Sparky")
 puts sparky.speak
-puts sparky.get_name
-
-fido = GoodDog.new("Fido")
-puts fido.speak
+puts sparky.name
+sparky.name = "Jimbo"
+puts sparky.name
