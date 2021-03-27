@@ -16,7 +16,7 @@ class MyCar
 
   def brake(number)
     @current_speed -= number
-    puts "You deccelerate to #{number} kph."
+    puts "You deccelerate by #{number} kph."
   end
 
   def current_speed
@@ -30,7 +30,7 @@ class MyCar
 
   def spray_paint(colour)
     self.colour = colour
-    puts "Your car is now #{colour}! Sick m'dude..."
+    puts "Your car is now #{self.colour}! Sick m'dude..."
   end
 end
 
@@ -40,3 +40,9 @@ puts tercel.year
 puts tercel.model
 tercel.spray_paint('red')
 puts tercel.colour
+tercel.speed_up(300)
+tercel.brake(250)
+tercel.current_speed
+tercel.brake(0)
+tercel.shut_down
+puts 'wowie'
