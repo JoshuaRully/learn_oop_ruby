@@ -28,9 +28,17 @@ class MyCar
     puts "Parking..."
   end
 
+  def self.gas_mileage(litres, km)
+    puts "#{km / litres}km per litre of gas." 
+  end
+
   def spray_paint(colour)
     self.colour = colour
     puts "Your car is now #{self.colour}! Sick m'dude..."
+  end
+
+  def to_s
+    "I'm a #{colour} #{year} #{model}. Oh yeah I can talk because why not..."
   end
 end
 
@@ -46,3 +54,5 @@ tercel.current_speed
 tercel.brake(0)
 tercel.shut_down
 puts 'wowie'
+puts tercel
+MyCar.gas_mileage(50, 800)
