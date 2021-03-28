@@ -1,4 +1,5 @@
 class MyCar
+  SERIAL_NUMBER = 1234567890
   attr_accessor :colour 
   attr_reader :year, :model
 
